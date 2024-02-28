@@ -1,2 +1,2 @@
-# My Diploma projects
+# My Diploma Projects
 Projects I created and worked on whilst studying.
