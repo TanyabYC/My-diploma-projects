@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/nav-menu.css">
+    <link rel="stylesheet" href="./styles/motueka.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <!-- JavaScript -->
+    <script src="./js/menuScript.js"></script>
+    <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
+
+    <title>Bed &amp; Breakfast Web Application</title>
+</head>
+<body>
+    <header>
+        <nav class="topNav" id="navigation">
+            <p class="icon">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff7f50" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </a>
+            </p>
+            <ul class="menu">
+                <li class="menu-home">
+                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                </li>
+                <li class="dropdown">
+                    Web Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./motueka.html">Bed &amp; Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="./haukai.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="./simone-peter.html">Airbnb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Games
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./breakout.html">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Console Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./student-data.html">Data Management</a>
+                        </li>
+                        <li>
+                            <a href="citygym.html">Gym Membership</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bed &amp; Breakfast Web Application for Motueka B&amp;B</h1>
+        <p class="project">
+            <a href="http://motueka.atwebpages.com/index.php" target="_blank" title="View the web application">
+                The Motueka Bed &amp; Breakfast Web Application
+            </a>
+        </p>
+
+        <!-- Project background section -->
+        <section>
+            <h2>Project Background</h2>
+            <p>
+                This project involved completing the development of a web application based on a design brief 
+                for a fictitious business, <span class="client">The Motueka Bed &amp; Breakfast.</span>
+            </p>
+        </section>
+
+        <!-- Discovery section -->
+        <section>
+            <h2>Discovery</h2>
+            <p>
+                Functional and non&#45;functional requirements were identified from the design brief and 
+                additional requirements were suggested with reasons why they were important. 
+            </p>
+            <p>
+                Rooms, room availability and making bookings needed to be available to customers. 
+                Administrators also needed this functionality together with being able to manage rooms, 
+                customers and bookings.
+            </p>
+            <p>
+                Partially completed source code were provided for the rooms and customer PHP web pages, 
+                whereas booking and login pages still needed to be developed. Paper&#45;based web page views 
+                containing mock data were supplied for all web pages depicting basic functional requirements. 
+                The source code provided needed additional updates to allow for authentication, authorisation, 
+                session management, log&#45;out functionality and security measures that would protect parts of 
+                the web application.
+            </p>
+            <p>
+                A SQL database, which excluded a booking table, was also provided. It needed to be integrated 
+                into the web application after designing and adding the booking table. However, some adjustments 
+                needed to be made to the customer table to store customer login details.
+            </p>
+            <p>
+                A privacy statement needed to be created and added on its own page within the web application.
+            </p>
+        </section>
+
+        <!-- Design section -->
+        <section>
+            <h2>Design</h2>
+            <p>
+                The graphical user interface &#40;GUI&#41; for the web application would be designed by another 
+                team and did not form part of this project. Adding information about the Bed &amp; Breakfast was 
+                also excluded from the project.
+            </p>
+        </section>
+
+        <!-- Development section -->
+        <section>
+            <h2>Development</h2>
+            <p>
+                The web application was developed and written with HTML5, PHP and JavaScript programming languages.
+            </p>
+            <p>
+                PHP web pages were first developed as HTML5 web pages before converting them to PHP and adding 
+                PHP code. HTML5 date and time picker was first implemented before replacing it with a JavaScript 
+                date and time picker. The index or home page was created and integrated into the web application&#39;s 
+                navigational menus for testing purposes. This would be replaced once the proper page is developed 
+                by another development team.
+            </p>
+            <p>
+                JavaScript technologies and libraries implemented include&#58;
+                
+            </p>
+            <ul>
+                <li>
+                    jQuery UI library with a date picker widget for when the user makes or updates a booking.
+                </li>
+                <li>
+                    JavaScript Object Notation &#40;JSON&#41; to search for room availability before making a booking.
+                </li>
+                <li>
+                    AJAX to help content load asynchronously without waiting for the whole web page to reload.
+                </li>
+            </ul>
+            <p>
+                The SQL database was updated to add the booking table with sample data and amend the customer 
+                table to add login functionality to the web application. Passwords that needed to be stored 
+                directly in the database, such as an administrator password, were encrypted before being stored. 
+                SQL statements were coded and added to the booking and log&#45;in pages to communicate with the 
+                database.
+            </p>
+            <p>
+                Security measures implemented include&#58;
+            </p>
+            <ul>
+                <li>
+                    HTML5 data validation for user input fields to prevent users from entering incorrect 
+                    information and control the type of data sent to the database.
+                </li>
+                <li>
+                    Parameterised prepared SQL statements to prevent the efficacy of SQL injection attacks.
+                </li>
+                <li>
+                    Filtering and encoding data to mitigate Cross&#45;site Scripting &#40;XSS&#41; attacks.
+                </li>
+                <li>
+                    Cross&#45;Origin Resource Sharing &#40;CORS&#41; headers to mitigate Cross&#45;Site Request 
+                    Forgery &#40;CSRF&#41; attacks.
+                </li>
+                <li>
+                    Encrypting passwords before sending them to the database.
+                </li>
+                <li>
+                    Verifying passwords entered during log&#45;in and comparing them against encrypted 
+                    passwords stored in the database to authenticate users.
+                </li>
+            </ul>
+            <p>
+                Authentication, authorisation, session management and log&#45;out functionality were implemented. 
+                A default username and password of &lsquo;root&rsquo; was added to the database to test pages viewed by 
+                administrators. For security reasons, this would need to be updated within the database before 
+                going live to allow for a private administrator username and password.
+            </p>
+            <p>
+                The privacy statement was created with the 
+                <a 
+                    href="https://privacy.org.nz/tools/privacy-statement-generator/" 
+                    target="_blank" title="More on the privacy statement generator">
+                    Privacy Statement Generator</a> 
+                after identifying the type of private identifiable information &#40;PII&#41; that would 
+                be collected by the web application.
+            </p>
+        </section>
+
+        <!-- Testing section -->
+        <section>
+            <h2>Testing</h2>
+            <p>
+                A test plan was created and executed to test the functionality and usability 
+                of the web application after deployment on multiple platforms.
+            </p>
+        </section>
+
+        <!-- Deployment -->
+        <section>
+            <h2>Deployment</h2>
+            <p>
+                A list of things to check before and after publishing to a hosting provider was created and 
+                followed before deployment.
+            </p>
+            <p>
+                Hosting was not included in the design brief. Consequently, free hosting providers were 
+                considered based on bandwidth, storage, processing power and memory, customer service and 
+                support, free subdomain or domain, scalability and cost criteria. 
+                <a href="https://www.awardspace.com/free-hosting/" target="_blank" title="More on AwardSpace">
+                    AwardSpace</a> was found to be the most suitable for this project and was used to host and publish this 
+                <a href="http://motueka.atwebpages.com/index.php" target="_blank" title="View the web application">
+                    web application</a>.
+            </p>
+        </section>
+
+        <!-- Evaluation section -->
+        <section>
+            <h2>Evaluation</h2>
+            <p>
+                An SSL certificate would encrypt communications with the server and could further protect 
+                sensitive data, such as passwords. Unfortunately, at the time of development, the hosting 
+                provider did not offer a free SSL certificate with their free plan unless it was upgraded 
+                to a paid plan. However, the client could organise this with their hosting provider when 
+                purchasing their hosting plan and domain.
+            </p>
+        </section>
+
+        <!-- Navigate to the top of the page -->
+        <p class="to-top">
+            <a href="#back" title="Go to the top of the page">Top of page</a>
+        </p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tanya Suzette Boshoff</p>
+    </footer>
+</body>
+</html>

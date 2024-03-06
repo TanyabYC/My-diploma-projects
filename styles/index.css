@@ -1,0 +1,7 @@
+section p {
+    padding-inline-start: 5%;
+}
+
+p:nth-child(3) {
+    padding-top: 25px;
+}

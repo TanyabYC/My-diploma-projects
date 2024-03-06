@@ -1,0 +1,101 @@
+/* Include padding and borders within width and height of all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Prepare the body style */
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 25px 50px;
+	font-family: 'Rubik', Verdana, sans-serif;
+    font-size: 4.5vw;
+    background-color: white;
+    color: #28498a;
+}
+
+section, .to-top {
+    padding-top: 25px;
+}
+
+.client {
+    text-shadow: 1px 1px rgb(17, 199, 255);
+    letter-spacing: 2px;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+}
+
+a {
+    color: coral;
+    font-style: italic;
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: rgb(17, 199, 255);
+}
+
+h1 {
+    font-family: 'Spectral', Georgia, serif;
+    text-align: center;
+    color: rgb(17, 199, 255);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    color: rgb(17, 199, 255);
+    font-family: 'Spectral', Georgia, serif;
+}
+
+h3, 
+h4 {
+    font-family: 'Spectral', Georgia, serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.to-top {
+    text-align: center;
+}
+
+/* For laptop screens */
+@media only screen and (min-width: 600px) {
+
+    /* decrease font size for tablets */
+    body {
+        font-size: 1.5em;
+    }
+        h1 {
+            padding-top: 0;
+            padding-bottom: 85px;
+        }
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.25em;
+    }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1024px) {
+    body {
+        padding: 50px 200px;
+    }
+        .project {
+            text-align: center;
+        }
+}

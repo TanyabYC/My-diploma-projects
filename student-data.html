@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/student-data.css">
+    <link rel="stylesheet" href="./styles/nav-menu.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <!-- JavaScript -->
+    <script src="./js/menuScript.js"></script>
+    <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
+
+    <title>Data Management Console Application</title>
+</head>
+<body>
+    <header>
+        <nav class="topNav" id="navigation">
+            <p class="icon">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff7f50" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </a>
+            </p>
+            <ul class="menu">
+                <li class="menu-home">
+                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                </li>
+                <li class="dropdown">
+                    Web Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./motueka.html">Bed &amp; Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="./haukai.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="./simone-peter.html">Airbnb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Games
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./breakout.html">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Console Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./student-data.html">Data Management</a>
+                        </li>
+                        <li>
+                            <a href="citygym.html">Gym Membership</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Data Management Console Application for Student Data</h1>
+        <p class="project">
+            <a href="https://github.com/TanyabYC/student-data-management-application/tree/main/StudentDataManagement/src" 
+                target="_blank" title="View the source code">Source code</a>
+            <a href="#closer-look" title="View the console application">Screenshots</a>
+        </p>
+
+        <!-- The Project Background section -->
+        <section>
+            <h2>Project Background</h2>
+            <p>
+                This project involved designing and building a console application to 
+                store and display student information, their assignment marks and grades.
+            </p>
+        </section>
+
+        <!-- The Discovery section -->
+        <section>
+            <h2>Discovery</h2>
+            <p>
+                A text file containing mock data with student information, including assignment 
+                marks and grades, was supplied. The application needed to read the text file and 
+                store the information in memory before users could interact with the program.
+            </p>
+            <p>
+                A main menu was required for users to gain access to functionality within the 
+                application, including viewing, adding and removing student information and 
+                exiting the program. The main menu needed to be displayed after every 
+                functionality was carried out by the user.
+            </p>
+            <p>
+                Written code was required to be well organised and readable with comments.
+            </p>
+        </section>
+
+        <!-- The Development section -->
+        <section>
+            <h2>Development</h2>
+            <p>
+                The application was written in Java and developed within the Eclipse IDE for 
+                Java Developers.
+            </p>
+            <p>
+                The application reads a locally saved text file with student information and 
+                saves it in RAM. It contains a main menu that gives users access to program 
+                functionality of displaying student marks and grades and adding or removing 
+                student records. The main menu displays after every task completed by a user.
+            </p>
+        </section>
+
+        <!-- The Testing section -->
+        <section>
+            <h2>Testing</h2>
+            <p>
+                User acceptance testing was carried out with a test plan indicating the 
+                expected and actual results of all test items to ensure the program was 
+                initialising properly by loading data from the text file and functioning as 
+                intended.
+            </p>
+        </section>
+
+        <!-- The Deployment section -->
+        <section>
+            <h2>Deployment</h2>
+            <p>
+                The source code was uploaded to a 
+                <a href="https://github.com/TanyabYC/student-data-management-application/tree/main/StudentDataManagement/src" 
+                    target="_blank" title="View the repository">GitHub repository</a> 
+                after this project.
+            </p>
+        </section>
+
+        <!-- The Take a Closer Look section -->
+        <section>
+            <h2 id="closer-look">Take a Closer Look</h2>
+            <p>
+                The screenshots below show what the application looks like in action.
+            </p>
+
+            <section class="user-interaction">
+                <h3>Screens for User Interaction</h3>
+
+                <section class="screenshot">
+                    <h4>The Main Menu</h4>
+                    <p>
+                        <img 
+                            src="./images/student-data/main-menu.jpg" width="783" height="205" 
+                            alt="A screenshot of the main menu">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Individual Student Marks</h4>
+                    <p>
+                        <img src="./images/student-data/individual-marks.jpg" width="783" height="204"
+                        alt="A screenshot of displaying marks of an individual student">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>All Student Marks</h4>
+                    <p>
+                        <img src="./images/student-data/all-marks.jpg" width="783" height="208"
+                        alt="A screenshot of displaying marks for all students">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Individual Student Grades</h4>
+                    <p>
+                        <img src="./images/student-data/individual-grades.jpg" width="783" height="208"
+                        alt="A screenshot of displaying grades of an individual student">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>All Student Grades</h4>
+                    <p>
+                        <img src="./images/student-data/all-grades.jpg" width="783" height="209"
+                        alt="A screenshot of displaying grades for all students">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Add a New Student</h4>
+                    <p>
+                        <img src="./images/student-data/add-student.jpg" width="783" height="354"
+                        alt="A screenshot of adding a new student">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Remove a Student</h4>
+                    <p>
+                        <img src="./images/student-data/remove-student.jpg" width="783" height="120"
+                        alt="A screenshot of removing a student">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Exit the Program</h4>
+                    <p>
+                        <img src="./images/student-data/exit-program.jpg" width="783" height="168"
+                        alt="A screenshot of exiting the program">
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <!-- Navigate to the top of the page -->
+        <p class="to-top">
+            <a href="#back" title="Go to the top of the page">Top of page</a>
+        </p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tanya Suzette Boshoff</p>
+    </footer>
+</body>
+</html>

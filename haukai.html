@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/nav-menu.css">
+    <link rel="stylesheet" href="./styles/haukai.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <!-- JavaScript -->
+    <script src="./js/menuScript.js"></script>
+    <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
+
+    <title>Restaurant Web Application</title>
+</head>
+<body>
+    <header>
+        <nav class="topNav" id="navigation">
+            <p class="icon">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff7f50" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </a>
+            </p>
+            <ul class="menu">
+                <li class="menu-home">
+                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                </li>
+                <li class="dropdown">
+                    Web Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./motueka.html">Bed &amp; Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="./haukai.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="./simone-peter.html">Airbnb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Games
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./breakout.html">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Console Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./student-data.html">Data Management</a>
+                        </li>
+                        <li>
+                            <a href="citygym.html">Gym Membership</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Restaurant Web Application for The Haukai Restaurant</h1>
+        <p class="project">
+            <a href="https://tanyabyc.github.io/haukai.github.io" target="_blank" title="View the web application">The Haukai Restaurant Web Application</a>
+        </p>
+
+        <!-- Project Background section -->
+        <section>
+            <h2>Project Background</h2>            
+            <p>
+                This project involved creating an interactive and responsive web application based on a project brief for a fictitious business, 
+                <span class="client">The Haukai Restaurant</span>, 
+                by following the web development process of discovery, design, development and testing, deployment and evaluation as discussed below.
+            </p>
+        </section>
+
+        <!-- Discovery section -->
+        <section>
+            <h2>Discovery</h2>
+            <p>
+                From the project brief, stakeholders were identified from which personas were created. Accessibility issues for a persona were considered and primary goals 
+                for each persona of what they would want to achieve when using the web application were considered. Use cases for each persona&#39;s primary goal were also created.
+            </p>
+            <p>
+                Functional and non&#45;functional requirements were identified by considering the client&#39;s goals and stakeholder requirements. These requirements were 
+                also categorised using the MoSCoW method of &lsquo;<strong>Must have</strong>&rsquo;, &lsquo;<strong>Should have</strong>&rsquo;, 
+                &lsquo;<strong>Could have</strong>&rsquo;, and &lsquo;<strong>Will not have</strong>&rsquo; with reasons for the specified category.
+            </p>
+            <p>
+                A feasibility study was conducted to compare two different development options, including a web application builder 
+                &#40;<a href="https://www.squarespace.com/" target="_blank" title="More on Squarespace">Squarespace</a>&#41; and a self&#45;hosted content management system 
+                &#40;<a href="https://wordpress.org/" target="_blank" title="More on WordPress">WordPress</a>&#41;, to make a recommendation to the client regarding which development 
+                option to choose.
+            </p>
+        </section>
+
+        <!-- Design section -->
+        <section>
+            <h2>Design</h2>
+            <p>
+                A site map was created with Microsoft Word. <a href="https://www.figma.com/" target="_blank" title="More on Figma">Figma</a> was used to create wireframes for 
+                mobile displays of web pages together with corresponding wireframes for desktop displays. The design followed a mobile&#45;first approach.
+            </p>
+            <p>
+                An interview and task&#45;based usability test was prepared and carried out with a potential user to obtain additional information about the usability of my design 
+                by considering 
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" title="More on the usability heuristics">Jakob Nielson&#39;s 10 Usability Heuristics</a>. 
+            </p>
+            <p>
+                Design features were considered to ensure accessibility for users of the web application in line with 
+                <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank" title="View the accessibility principles">W3C&#39;s Web Accessibility Principles</a>.
+            </p>
+        </section>
+
+        <!-- Development section -->
+        <section>
+            <h2>Development</h2>
+            <p> 
+                The web application was developed with a mobile&#45;first approach and written with HTML5, CSS and JavaScript programming languages. It includes some Google tools, such as 
+                a Google form to request a reservation, a Google calendar and agenda to indicate opening hours and a Google map to show the restaurant&#39;s location.
+            </p>
+            <p>
+                Accessibility features implemented include semantic HTML elements, correct use of headings and the &lsquo;alt&rsquo; attribute with HTML &lsquo;image&rsquo; elements.
+            </p>
+            <p>
+                Usability features implemented include familiar social media icons, ensuring menu items, field labels and actions for buttons are visible on each page, and 
+                ensuring the design is uncluttered, minimalistic and aesthetic.
+            </p>
+            <p>
+                Search Engine Optimisation &#40;SEO&#41; was implemented for online marketing purposes by including meta tags on each HTML page and verifying site ownership with Google, 
+                thereby ensuring people can find the web application via Google.
+            </p>
+        </section>
+        
+        <!-- Testing section -->
+        <section>
+            <h2>Testing</h2>
+            <p>
+                Testing of code was carried out with Chrome DevTools throughout the development phase to ensure the web application was functional. W3C standards for HTML and CSS were 
+                implemented and tested with W3C&#39;s <a href="https://validator.w3.org/" target="_blank" title="Validate HTML Markup">HTML Markup</a> and 
+                <a href="https://jigsaw.w3.org/css-validator/validator.html.en" target="_blank" title="Validate CSS">CSS</a> Validation Service.
+            </p>
+            <p>
+                The accessibility of the web application was tested and evaluated with 
+                <a href="https://achecks.org/checker/index.php" target="_blank" title="Check web accessibility">AChecker&#39;s Web Accessibility Checker</a> and 
+                <a href="https://wave.webaim.org/" target="_blank" title="More on WAVE">WebAIM&#39;s WAVE</a> tool to ensure 
+                accessibility guidelines were followed.
+            </p>
+            <p>
+                A mobile&#45;friendly test was carried out for each web page with Google&#39;s Mobile&#45;Friendly Test tool to ensure responsive 
+                design principles were implemented and the web application was mobile&#45;ready. However, this tool has now been replaced with Google&#39;s 
+                <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" title="More on Lighthouse">Lighthouse tool</a>.
+            </p>
+            <p>
+                Page loading times were optimised with 
+                <a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect" target="_blank" title="Test page speeds">Google&#39;s PageSpeed Insights</a> tool 
+                to ensure the home page loads within 2 seconds on a 4G network for both mobile and desktop displays.
+            </p>
+        </section>
+
+        <!-- Deployment section -->
+        <section>
+            <h2>Deployment</h2>
+            <p>
+                The <a href="https://tanyabyc.github.io/haukai.github.io" target="_blank" title="View the web application">web application</a> was uploaded to 
+                a <a href="https://github.com/TanyabYC/haukai.github.io" target="_blank" title="View the repository">GitHub repository</a> and 
+                hosted with <a href="https://pages.github.com/" target="_blank" title="More on GitHub Pages">GitHub Pages</a> for this project.
+            </p>
+            <p>
+                The authentication method of using a .htpasswd and .htaccess file for the staff information page could not be implemented on the GitHub server. 
+                However, it was tested to be functional when using Uniform server with the correct file path.
+            </p>
+        </section>
+
+        <!-- Evaluation section -->
+        <section>
+            <h2>Evaluation</h2>
+            <p>
+                A staff information page was lastly added and accessible from the home page to include a staff roster and staff contact details. The information contained on this page was 
+                generated with mock data with the <a href="https://www.mockaroo.com/" target="_blank" title="Create mock data">Mockaroo</a> tool.
+            </p>
+            <p>
+                An interview and task&#45;based usability test was prepared and carried out with a potential user for the staff information page to identify improvements that 
+                could be made to ensure a good user experience.
+            </p>
+            <p>
+                Also, recommendations were made to the client for entry&#45;level web hosting options, SSL certificate authorities&#47;providers and content delivery networks that were 
+                considered and compared.
+            </p>
+            <p>
+                Upon further evaluation, adjustments could be made to the design of the web application on larger screens to allow content boxes to be placed&#47;stacked 
+                next to each other as opposed to being placed&#47;stacked on top of each other. This will allow the web application to be more usable on these larger screens.
+            </p>
+        </section>
+
+        <!-- Navigate to the top of the page -->
+        <p class="to-top">
+            <a href="#back" title="Go to the top of the page">Top of page</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tanya Suzette Boshoff</p>
+    </footer>
+</body>
+</html>

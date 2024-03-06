@@ -1,0 +1,79 @@
+/* Style the site map content container */
+#sitemap-content ol {
+	width: 100%;
+	padding-right: 9%;
+	padding-bottom: 50px;
+	padding-left: 9%;	
+	margin-bottom: 0;
+}
+
+/* All secondary headings */
+#sitemap-content h2 {	
+	padding-left: 19%;
+	font-size: 21px;
+	color: #C75000;
+}
+
+/* Reset the spacing above a below the content area */
+#sitemap-content h2:first-child, #sitemap-content h2:last-child {
+	margin-top: 0;	
+}
+
+/* List items */
+#sitemap-content li {
+	padding-left: 19%;
+	font-size: 17px;
+	list-style-position: inside;
+	line-height: 150%;
+}
+
+/* Change the link style when the user hovers over it with a mouse */
+#sitemap-content a:hover {
+	color: #C75000;
+	text-decoration: underline;
+}
+
+/* Make webpage fit on tablets with smaller screens */
+@media only screen and (max-width: 1024px) {
+	#sitemap-content ol {
+		padding-right: 3%;
+		padding-left: 3%;	
+	}
+	#sitemap-content h2 {
+		padding-left: 0;
+		text-align: center;
+	}
+	#sitemap-content ul {
+		padding-left: 0;
+	}
+	#sitemap-content li {
+		padding-left: 0;
+		text-align: center;
+		list-style-type: none;
+		line-height: 200%;
+	}
+}
+
+/* Make webpage fit on mobile phones with smaller screens */
+@media only screen and (max-width: 768px) {
+	#sitemap-content {
+		padding-top: 38px;
+		border-top-width: 3px;
+		border-top: double darkorange;
+		border-spacing: 5px;	
+	}
+	#sitemap-content ol {
+		padding-right: 6%;
+		padding-left: 6%;
+		padding-bottom: 45px;
+	}
+	#sitemap-content h2 {
+		text-transform: uppercase;
+	}
+	#sitemap-content li {
+		font-size: 16px;
+
+		/* necessary setting for fat finger friendly rule */
+		line-height: 44px;
+	}
+}
