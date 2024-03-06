@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanya Suzette Boshoff">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/tic-tac-toe.css">
+    <link rel="stylesheet" href="./styles/nav-menu.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <!-- JavaScript -->
+    <script src="./js/menuScript.js"></script>
+    <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
+
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    <header>
+        <nav class="topNav" id="navigation">
+            <p class="icon">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff7f50" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </a>
+            </p>
+            <ul class="menu">
+                <li class="menu-home">
+                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                </li>
+                <li class="dropdown">
+                    Web Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./motueka.html">Bed &amp; Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="./haukai.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="./simone-peter.html">Airbnb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Games
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./breakout.html">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Console Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./student-data.html">Data Management</a>
+                        </li>
+                        <li>
+                            <a href="citygym.html">Gym Membership</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Tic&#45;Tac&#45;Toe Game</h1>
+        <p class="project">
+            <a href="https://github.com/TanyabYC/tic-tac-toe-game" target="_blank" title="View the source code">Source Code</a>
+            <a href="#closer-look" title="View the game">Screenshots</a>
+        </p>
+
+        <!-- Project background section -->
+        <section>
+            <h2>Project Background</h2>
+            <p>
+                This project involved a scenario of taking over from another programmer to complete 
+                the build of a Tic&#45;Tac&#45;Toe game.
+            </p>
+            <p>
+                Tic&#45;Tac&#45;Toe involves two players taking turns to mark noughts or crosses on 
+                a 3x3 grid. The first player to place three of their marks in a horizontal, vertical 
+                or diagonal row wins.                
+            </p>
+        </section>
+
+        <!-- Discovery section -->
+        <section>
+            <h2>Discovery</h2>
+            <p>
+                This game needed to be a simplified graphical version where a JPanel component 
+                needed to be implemented to create a canvas that would allow noughts and crosses 
+                to be painted on.
+            </p>
+            <p>
+                In the game, crosses always needed to begin. The game needed to check after each move 
+                whether a player had won. Players needed to restart the game by clicking any cell 
+                after the game ended with a winner or a draw.
+            </p>
+            <p>
+                The other programmer&#39;s unfinished source code was provided and included 
+                &lsquo;TODO&rsquo; comments which hinted at the code that needed to be written.
+            </p>
+            <p>
+                Comments, explaining my approach and what the code does, needed to be included when 
+                adding additional code.
+            </p>
+        </section>
+
+        <!-- Design section -->
+        <section>
+            <h2>Design</h2>
+            <p>
+                A UML class diagram was created with the 
+                <a href="https://app.diagrams.net/" target="_blank" title="View the diagrams.net application">draw.io</a> 
+                application to design each class and indicate the relationship between them.
+            </p>
+        </section>
+
+        <!-- Development section -->
+        <section>
+            <h2>Development</h2>
+            <p>
+                The game was written in Java and developed within the Eclipse IDE for Java Developers.
+            </p>
+        </section>
+
+        <!-- Testing section -->
+        <section>
+            <h2>Testing</h2>
+            <p>
+                User acceptance testing was carried out to ensure the game functioned as intended.
+            </p>
+        </section>
+
+        <!-- Deployment -->
+        <section>
+            <h2>Deployment</h2>
+            <p>
+                The source code was uploaded to a 
+                <a href="https://github.com/TanyabYC/tic-tac-toe-game" target="_blank" title="View the repository">GitHub repository</a> 
+                for this project.
+            </p>
+        </section>
+
+        <!-- Take a Closer Look section -->
+        <section>
+            <h2 id="closer-look">Take a Closer Look</h2>
+            <p>
+                The screenshots below show what the game looks like in action.
+            </p>
+
+            <section class="user-interaction">
+                <h3>Screens for User Interaction</h3>
+
+                <section class="screenshot">
+                    <h4>Simplified Graphics</h4>
+                    <p>
+                        <img 
+                            src="./images/tic-tac-toe/game-start.jpg" width="296" height="357"
+                            alt="A screenshot of the simplified graphical game version">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Crosses Begin</h4>
+                    <p>
+                        <img 
+                            src="./images/tic-tac-toe/crosses-begin.jpg" width="296" height="357"
+                            alt="A screenshot of crosses beginning the game">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Noughts Taking a Turn</h4>
+                    <p>
+                        <img 
+                            src="./images/tic-tac-toe/check-after-each-move.jpg" width="296" height="357"
+                            alt="A screenshot of the game after Noughts took a turn">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Ending with a Win</h4>
+                    <p>
+                        <img 
+                            src="./images/tic-tac-toe/won.jpg" width="296" height="357"
+                            alt="A screenshot of the game ending with crosses who won">
+                    </p>
+                </section>
+
+                <section class="screenshot">
+                    <h4>Ending in a Draw</h4>
+                    <p>
+                        <img 
+                            src="./images/tic-tac-toe/draw.jpg" width="296" height="357"
+                            alt="A screenshot of the game ending in a draw">
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <!-- Navigate to the top of the page -->
+        <p class="to-top">
+            <a href="#back" title="Go to the top of the page">Top of page</a>
+        </p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tanya Suzette Boshoff</p>
+    </footer>
+</body>
+</html>

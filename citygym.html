@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/citygym.css">
+    <link rel="stylesheet" href="./styles/nav-menu.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <!-- JavaScript -->
+    <script src="./js/menuScript.js"></script>
+    <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
+
+    <title>Gym Membership Desktop Database Application</title>
+</head>
+<body>
+    <header>
+        <nav class="topNav" id="navigation">
+            <p class="icon">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff7f50" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </a>
+            </p>
+            <ul class="menu">
+                <li class="menu-home">
+                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                </li>
+                <li class="dropdown">
+                    Web Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./motueka.html">Bed &amp; Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="./haukai.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="./simone-peter.html">Airbnb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Games
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./breakout.html">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Console Applications
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./student-data.html">Data Management</a>
+                        </li>
+                        <li>
+                            <a href="citygym.html">Gym Membership</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gym Membership Desktop Database Application for City Gym</h1>
+        <p class="project">
+            <!-- <a href="https://github.com/TanyabYC/city-gym-application" target="_blank" title="View the source code">Source code</a> -->
+            <a href="#closer-look" title="View the desktop database application">Screenshots</a>
+        </p>
+
+        <!-- Project background section -->
+        <section>
+            <h2>Project Background</h2>
+            <p>
+                This project involved converting a paper&#45;based membership application of a fictitious business, 
+                <span class="client">City Gym</span>, into a desktop application that would run on their new Microsoft Windows computers. 
+                Later on, the application was enhanced to a multi&#45;page database application.
+            </p>
+        </section>
+
+        <!-- Discovery section -->
+        <section>
+            <h2 id="discovery">Discovery</h2>
+            <p>
+                The initial project requirement was to convert the paper&#45;based membership application form to a digital version. 
+                New gym members needed to sign up with their personal information and calculate their membership costs. New membership 
+                information initially needed to be stored in a text file once submitted.
+            </p>
+            <p>
+                Later on, further <a href="#enhancements" title="More on enhancements">enhancements</a> were required 
+                for the creation of a SQL database to store membership information and to allow staff to search for existing gym members and 
+                update their information, as seen on the <a href="#search">member search screen</a>.                
+            </p>
+            <p>
+                Another requirement added to the project was to design a <a href="#book">screen</a> that would allow gym members to 
+                book a fitness class.
+            </p>
+        </section>
+
+        <!-- Design section -->
+        <section>
+            <h2 id="design">Design</h2>
+            <p>                
+                A concept for the design of the gym membership application screen was first created by brainstorming ideas.
+                A connectivity diagram was then created to design the application structure and add user interactivity. This was then 
+                used to create a wireframe that mapped out user interaction and functionality of the screen, after which, a prototype 
+                was created within Visual Studio 2022.
+            </p>
+            <p>
+                Additional wireframes were later created for all other screens to display user interface elements needed when enhancing 
+                the desktop application to a database application. This was followed by the creation of prototypes from these wireframes 
+                within Visual Studio 2022.
+            </p>
+            <p>
+                The SQL database would store new gym memberships once submitted from the 
+                <a href="#gym-membership" title="View the gym membership screen">gym membership screen</a> and records would be                 
+                queried and updated by staff when searching for a member. The SQL database was designed with an 
+                Entity Relationship Diagram &#40;ERD&#41; and two of the classes were designed with a Unified Modelling Language (UML) diagram 
+                and added to the database to accommodate additional enhancements of booking a fitness class.
+            </p>
+        </section>
+
+        <!-- Development section -->
+        <section>
+            <h2>Development</h2>
+            <p>
+                The application and SQL database was developed with the .NET Framework within Visual Studio 2022. It runs on a 
+                Microsoft Windows operating system and was written in the C# programming language.
+            </p>
+            <p>                
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" title="More on the usability heuristics">
+                    Jakob Nielsen&#39;s Usability Heuristics</a> were implemented within the application and include:
+            </p>
+            <ol>
+                <!-- Heuristic 1 -->
+                <li>
+                    Informing the user of the state the system is in.
+                    <ul>
+                        <li>
+                            Each screen has clear headings.
+                        </li>
+                        <li>
+                            User selections are clearly visible through radio buttons and checkboxes that are not selected by default and 
+                            buttons to clear results or reset forms also remove these selections.
+                        </li>
+                        <li>
+                            Important information is communicated to users with a pop&#45;up message box, labels that change colour and 
+                            instructions that appear on the screen.
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- Heuristic 2 -->
+                <li>
+                    Mimicking a real&#45;life experience of adding and searching for a new member with easy&#45;to&#45;understand language that does not 
+                    contain jargon.
+                </li>
+                
+                <!-- Heuristic 3 -->
+                <li>
+                    Allowing users to undo mistakes and exit the application at any stage of the program gives users control and alleviates 
+                    user frustration.
+                </li>
+                
+                <!-- Heuristic 4 -->
+                <li>
+                    Implementing industry conventions and system standards.
+                    <ul>
+                        <li>
+                            Only adding a new membership if consent was given by the client to share their personal information with City Gym for 
+                            administrative purposes.
+                        </li>
+                        <li>
+                            Allowing new members to opt&#45;in for their information to be shared with third parties for marketing purposes.
+                        </li>
+                        <li>
+                            Making the main menu screen easy to find by adding a link to it in the top menu bar.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Heuristic 5 -->
+                <li>
+                    Preventing errors before they occur and alleviating incorrect data from being populated and entered into the database.
+                    <ul>
+                        <li>
+                            Displaying a warning message if a user tries to search for a member without search criteria or 
+                            adds a new membership without completing the form.
+                        </li>
+                        <li>
+                            Changing instructions displayed to users when calculating a membership cost to red when those instructions are not followed.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Heuristic 6 -->
+                <li>
+                    Making user instructions and selections clearly visible to alleviate the need for users to memorise information.
+                </li>
+
+                <!-- Heuristic 7 -->
+                <li>
+                    Allowing advanced users to tab through each screen to interact with the application faster than novice users that 
+                    use their mouse.
+                </li>
+
+                <!-- Heuristic 8 -->
+                <li>
+                    Linking screens to help instructions relevant to the screen the user is viewing to make it simple for the user 
+                    to find relevant information.
+                </li>
+
+                <!-- Heuristic 9 -->
+                <li>
+                    Using plain language with no error codes in error messages and including suggestions to solve errors.
+                </li>
+
+                <!-- Heuristic 10 -->
+                <li>
+                    Helping users understand how to interact with each screen through help instructions.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Testing section -->
+        <section>
+            <h2>Testing</h2>
+            <p>
+                User acceptance testing was carried out with a test plan indicating the expected and actual results of all test items 
+                to ensure the application was functioning as intended.
+            </p>
+            <p>
+                A user experience test &#40;UAT&#41; was also carried out with a user survey to establish whether the application was easy and 
+                simple to use. The test revealed that a clearer way was needed to advise the user when a new member was added. This 
+                functionality was added to the application with a pop-up message box displayed to the user which was then tested with 
+                user acceptance testing &#40;UAT&#41;.
+            </p>
+        </section>
+
+        <!-- Deployment section -->
+        <section>
+            <h2>Deployment</h2>
+            <p>
+                Deploying to platforms other than a Microsoft Windows operating system was not a requirement for this project 
+                because the gym intended to use the application on their computers. However, by upgrading the application 
+                to the latest .NET platform, the application could be deployed to multiple operating systems thereafter.
+            </p>
+            <p>
+                Unfortunately, this application is not available online. However, it is available via a .zip file on request and approval.
+            </p>
+        </section>
+
+        <!-- Evaluation section -->
+        <section>
+            <h2 id="enhancements">Evaluation</h2>            
+            <p>
+                Enhancements included converting the application to a multi-page database application to allow staff to search for 
+                existing gym members with their first names and&#47;or membership types and update their personal information.
+            </p>
+            <p>
+                Also, a fitness class booking screen was designed and added to the application to allow gym members to sign up for a 
+                fitness class. The functionality of this screen was not required for this project because it would be completed at a later stage.
+            </p>
+            <p>
+                Lastly, help screens were added to make it easy for users to interact with the application. These screens were made available 
+                from every screen.
+            </p>
+            <p>
+                Further enhancements could be made to the application to add authentication by letting users log in before 
+                being able to access the member search screen. Gym member information could then be kept private and protected from 
+                other gym members and accessible only to staff with authorisation.
+            </p>
+            <p class="to-discovery">
+                <a href="#discovery" title="Back to the discovery section">Back to discovery</a>
+            </p>
+        </section>
+
+        <!-- Take a closer look section -->
+        <section>
+            <h2 id="closer-look">Take a Closer Look</h2>
+            <p>
+                The screenshots below show what the application looks like in action.
+            </p>
+
+            <section class="user-interaction">
+                <h3>Screens for User Interaction</h3>
+
+                <h4>The Main Menu Home Screen</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/main-menu.jpg" width="799" height="611" 
+                        alt="The main menu screen"
+                    >
+                </p>
+
+                <h4 id="search">Searching for a Member</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/search-member.jpg" width="1024" height="548" 
+                        alt="Search for a gym member screen"
+                    >
+                </p>
+                <p class="to-discovery">
+                    <a href="#discovery" title="Back to the discovery section">Back to discovery</a>
+                </p>
+
+                <h4>Searching with the Letter &lsquo;i&rsquo;</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/search-member-with-i.jpg" width="1024" height="549" 
+                        alt="Search for a gym member screen with the letter &lsquo;i&rsquo;"
+                    >
+                </p>
+
+                <h4>Searching with the Letter &lsquo;i&rsquo; and a Premium Membership Type</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/search-member-with-i-and-premium.jpg" width="1024" height="548" 
+                        alt="Search for a gym member screen with &lsquo;i&rsquo; and premium membership type"
+                    >
+                </p>
+                
+                <h4>Searching with a Premium Membership Type</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/search-member-with-premium.jpg" width="1024" height="549" 
+                        alt="Search for a gym member screen with premium membership type"
+                    >
+                </p>
+            
+                <h4 id="gym-membership">Adding a Gym Member</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/add-member-with-test-data.jpg" width="1024" height="670" 
+                        alt="The top of the add a member screen"
+                    >
+                    <img 
+                        src="./images/city-gym/add-member-with-test-data-bottom.jpg" width="1024" height="196" 
+                        alt="The bottom of the add a member screen"
+                    >
+                </p>
+                <p class="to-design">
+                    <a href="#design" title="Back to the design section">Back to design</a>
+                </p>
+            
+                <h4 id="book">Booking a Fitness Class</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/book-fitness-class.jpg" width="955" height="807" 
+                        alt="The book a fitness class screen"
+                    >
+                </p>
+                <p class="to-discovery">
+                    <a href="#discovery" title="Back to the discovery section">Back to discovery</a>
+                </p>
+            </section>
+
+            <section class="help-instruction">
+                <h3>Screens with Help Instructions</h3>
+
+                <h4>Help with Navigation</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/help/navigation.jpg" width="1024" height="794" 
+                        alt="The help screen explaining the functionality of each top menu bar item for navigating through the application"
+                    >
+                </p>
+
+                <h4>Help for the Main Menu</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/help/main-menu.jpg" width="942" height="615" 
+                        alt="The help screen explaining the functionality of each button in the main menu"
+                    >
+                </p>
+
+                <h4>Help to Search for a Member</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/help/search.jpg" width="1024" height="710" 
+                        alt="The help screen with instructions on how to search for a member"
+                    >
+                </p>
+
+                <h4>Help to Add a Member</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/help/membership.jpg" width="1002" height="962" 
+                        alt="The help screen with instructions on how to add a member"
+                    >
+                </p>
+
+                <h4>Help to Book a Fitness Class</h4>
+                <p>
+                    <img 
+                        src="./images/city-gym/help/book.jpg" width="960" height="924" 
+                        alt="The help screen with instructions on how to book a fitness class"
+                    >
+                </p>
+            </section>
+        </section>
+
+        <!-- Navigate to the top of the page -->
+        <p class="to-top">
+            <a href="#back" title="Go back to the top of the page">Top of page</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tanya Suzette Boshoff</p>
+    </footer>
+</body>
+</html>

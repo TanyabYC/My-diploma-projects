@@ -1,0 +1,65 @@
+/* Style the attractions content container */
+#attractions-content {
+	width: 100%;
+	padding-right: 9%;
+	padding-bottom: 50px;
+	padding-left: 9%;
+	text-align: center;
+}
+
+/* Paragraphs with conent */
+#attractions-content p {
+	font-size: 17px;
+	line-height: 1.5em;
+}
+
+/* Specify the size of the image as required by Tourism New Zealand */
+#attractions-content img {
+	width: 160px;
+}
+
+#attractions-content a:first-child {
+	padding-right: 3%;
+}
+
+/* Change the Tourism New Zealand image style when the user hovers over it with a mouse */
+#attractions-content a:hover {
+	opacity: 0.7;
+}
+
+/* Make webpage fit on tablets with smaller screens */
+@media only screen and (max-width: 1024px) {
+	#attractions-content {
+		padding-right: 3%;
+		padding-bottom: 40px;
+		padding-left: 3%;	
+	}
+	#attractions-content p {		
+		text-align: center;
+	}
+}
+
+/* Make webpage fit on mobile phones with smaller screens */
+@media only screen and (max-width: 768px) {
+	#attractions-content {
+		padding-right: 6%;
+		padding-bottom: 30px;
+		padding-left: 6%;
+	}
+	#attractions-content p {
+		font-size: 16px;
+
+		/* necessary setting for fat finger friendly rule */
+		line-height: 44px;
+	}
+	#attractions-content a {
+		display: block;
+	}
+	#attractions-content a:first-child {
+		padding-right: 0;
+		padding-bottom: 12px;
+	}
+	#attractions-content img {
+		width: 160px;
+	}
+}
