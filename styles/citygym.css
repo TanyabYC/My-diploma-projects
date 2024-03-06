@@ -1,5 +1,13 @@
 .project a {
     display: block;
+    line-height: 2.75;
+}
+
+/* Clearfix after project paragraph containing hyperlinks */
+.project::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h3 {
@@ -24,4 +32,13 @@ img {
 .to-discovery, .to-design {
     text-align: center;
     padding-top: 25px;
+}
+
+/* For laptop and desktop screens */
+@media only screen and (min-width: 600px) {
+    .project a {
+        float: left;
+        width: 50%;
+        line-height: initial;
+    }
 }
