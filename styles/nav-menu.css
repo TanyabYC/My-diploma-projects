@@ -26,6 +26,10 @@
                 text-decoration: none;
                 font-style: normal;
             }
+            /* Style menu items of active pages */
+            .active {
+                font-weight: bold;
+            }
 
 /* For laptop screens */
 @media only screen and (min-width: 600px) {
