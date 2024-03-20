@@ -1,2 +1,2 @@
 # My Diploma Projects
-Projects I created and worked on whilst studying.
+My projects completed whilst studying Web Development and Design.
