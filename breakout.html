@@ -21,8 +21,10 @@
     <title>Breakout Game</title>
 </head>
 <body>
+    <!-- The header contains the navigational menu -->
     <header>
         <nav class="topNav" id="navigation">
+            <!-- Menu icon visible on small screens -->
             <p class="icon">
                 <a href="javascript:void(0)" onclick="toggleMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
@@ -31,11 +33,16 @@
                     </svg>
                 </a>
             </p>
-            <ul class="menu">
+            
+            <!-- Navigational Menu -->
+            <ul class="menu">                
+                <!-- Home Menu -->
                 <li class="menu-home">
-                    <a class="active" id="back" href="./index.html" title="View the home page">Home</a>
+                    <a id="back" href="./index.html" title="View the home page">Home</a>
                 </li>
-                <li class="dropdown" id="webapps" onclick="showWebApps()">
+
+                <!-- Web Applications Menu -->
+                <li class="dropdown">
                     Web Applications
                     <ul class="dropdown-content">
                         <li>
@@ -49,25 +56,32 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown" id="games" onclick="showGames()">
+
+                <!-- Games Menu -->
+                <li class="dropdown">
                     Games
                     <ul class="dropdown-content">
                         <li>
-                            <a href="./breakout.html">Breakout</a>
+                            <a class="active" href="./breakout.html">Breakout</a>
                         </li>
                         <li>
                             <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown" id="consoleApps" onclick="showConsoleApps()">
+
+                <!-- Console Applications Menu -->
+                <li class="dropdown">
                     Console Applications
                     <ul class="dropdown-content">
                         <li>
                             <a href="./student-data.html">Data Management</a>
                         </li>
                         <li>
-                            <a href="citygym.html">Gym Membership</a>
+                            <a href="./citygym.html">Gym Membership</a>
+                        </li>
+                        <li>
+                            <a href="./mathcalculations.html">Math Calculations</a>
                         </li>
                     </ul>
                 </li>

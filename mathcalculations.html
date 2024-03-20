@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tanya Suzette Boshoff">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/default.css">
-    <link rel="stylesheet" href="./styles/tic-tac-toe.css">
     <link rel="stylesheet" href="./styles/nav-menu.css">
+    <link rel="stylesheet" href="./styles/mathcalculations.css">
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
@@ -18,7 +17,7 @@
     <script src="./js/menuScript.js"></script>
     <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
 
-    <title>Tic Tac Toe Game</title>
+    <title>Mathematical Calculations</title>
 </head>
 <body>
     <!-- The header contains the navigational menu -->
@@ -65,7 +64,7 @@
                             <a href="./breakout.html">Breakout</a>
                         </li>
                         <li>
-                            <a class="active" href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
+                            <a href="./tic-tac-toe.html">Tic&#45;Tac&#45;Toe</a>
                         </li>
                     </ul>
                 </li>
@@ -81,7 +80,7 @@
                             <a href="./citygym.html">Gym Membership</a>
                         </li>
                         <li>
-                            <a href="./mathcalculations.html">Math Calculations</a>
+                            <a class="active" href="./mathcalculations.html">Math Calculations</a>
                         </li>
                     </ul>
                 </li>
@@ -90,139 +89,133 @@
     </header>
     
     <main>
-        <h1>Tic&#45;Tac&#45;Toe Game</h1>
+        <h1>Mathematical Calculations Console Application</h1>
         <p class="project">
-            <a href="https://github.com/TanyabYC/tic-tac-toe-game/tree/main/Tic_Tac_Toe/src" 
-                target="_blank" title="View the source code">Source Code</a>
-            <a href="#closer-look" title="View the game">Screenshots</a>
+            <a href="https://github.com/TanyabYC/mathematical-calculations" 
+                target="_blank" title="View the source code">Source code</a>
+            <a href="#closer-look" title="View the console application">Screenshots</a>
         </p>
 
-        <!-- Project background section -->
+        <!-- The Project Background section -->
         <section>
             <h2>Project Background</h2>
             <p>
-                This project involved a scenario of taking over from another programmer to complete 
-                the build of a Tic&#45;Tac&#45;Toe game.
-            </p>
-            <p>
-                Tic&#45;Tac&#45;Toe involves two players taking turns to mark noughts or crosses on 
-                a 3x3 grid. The first player to place three of their marks in a horizontal, vertical 
-                or diagonal row wins.                
+                This project involved converting a Java console application that handles mathematical 
+                calculations to a Python program.
             </p>
         </section>
 
-        <!-- Discovery section -->
+        <!-- The Discovery section -->
         <section>
             <h2>Discovery</h2>
             <p>
-                This game needed to be a simplified graphical version where a JPanel component 
-                needed to be implemented to create a canvas that would allow noughts and crosses 
-                to be painted on.
+                A Java file containing Java code was supplied which needed to be converted into 
+                Python.
             </p>
             <p>
-                In the game, crosses always needed to begin. The game needed to check after each move 
-                whether a player had won. Players needed to restart the game by clicking any cell 
-                after the game ended with a winner or a draw.
-            </p>
-            <p>
-                The other programmer&#39;s unfinished source code was provided and included 
-                &lsquo;TODO&rsquo; comments which hinted at the code that needed to be written.
-            </p>
-            <p>
-                Comments, explaining my approach and what the code does, needed to be included when 
-                adding additional code.
+                The program also needed to be updated to include a fourth menu option
+                that would allow the user to exit the program.
             </p>
         </section>
 
-        <!-- Design section -->
-        <section>
-            <h2>Design</h2>
-            <p>
-                A UML class diagram was created with the 
-                <a href="https://app.diagrams.net/" target="_blank" title="View the diagrams.net application">draw.io</a> 
-                application to design each class and indicate the relationship between them.
-            </p>
-        </section>
-
-        <!-- Development section -->
+        <!-- The Development section -->
         <section>
             <h2>Development</h2>
             <p>
-                The game was written in Java and developed within the Eclipse IDE for Java Developers.
+                The application was written in Python and developed within the PyCharm IDE.
+            </p>
+            <p>
+                The application contains a main menu that gives users access to program 
+                functionality to calculate the area of a square or circle, display 
+                palindromes up to 1,000 or exit the program. The main menu displays 
+                after every task completed by the user until the user selects to exit the 
+                program.
+            </p>
+            <p>
+                Written code is well organised and readable with comments.
             </p>
         </section>
 
-        <!-- Testing section -->
+        <!-- The Testing section -->
         <section>
             <h2>Testing</h2>
             <p>
-                User acceptance testing was carried out to ensure the game functioned as intended.
+                A black box test was conducted after developing the Python program to 
+                test whether the functionality was the same as the Java program. Issues 
+                found during testing were resolved after white box testing revealed errors 
+                within the code.
+            </p>
+            <p>
+                Testing also revealed errors within the inital Java code provided for the 
+                project which was corrected and updated for the Python developed program.
             </p>
         </section>
 
-        <!-- Deployment -->
+        <!-- The Deployment section -->
         <section>
             <h2>Deployment</h2>
             <p>
                 The source code was uploaded to a 
-                <a href="https://github.com/TanyabYC/tic-tac-toe-game/tree/main/Tic_Tac_Toe/src" 
+                <a href="https://github.com/TanyabYC/mathematical-calculations" 
                     target="_blank" title="View the repository">GitHub repository</a> 
-                for this project.
+                after completing this project.
             </p>
         </section>
 
-        <!-- Take a Closer Look section -->
+        <!-- The Take a Closer Look section -->
         <section>
             <h2 id="closer-look">Take a Closer Look</h2>
             <p>
-                The screenshots below show what the game looks like in action.
+                The screenshots below show what the application looks like in action.
             </p>
 
             <section class="user-interaction">
                 <h3>Screens for User Interaction</h3>
 
                 <section class="screenshot">
-                    <h4>Simplified Graphics</h4>
+                    <h4>The Main Menu</h4>
                     <p>
                         <img 
-                            src="./images/tic-tac-toe/game-start.jpg" width="296" height="357"
-                            alt="A screenshot of the simplified graphical game version">
+                            src="./images/mathcalculations/main-menu.jpg" width="429" height="156" 
+                            alt="A screenshot of the main menu">
                     </p>
                 </section>
 
                 <section class="screenshot">
-                    <h4>Crosses Begin</h4>
+                    <h4>Area of a Square Calculations</h4>
                     <p>
-                        <img 
-                            src="./images/tic-tac-toe/crosses-begin.jpg" width="296" height="357"
-                            alt="A screenshot of crosses beginning the game">
+                        <img src="./images/mathcalculations/square.jpg" width="429" height="394"
+                        alt="A screenshot of calculating the area of a square">
                     </p>
                 </section>
 
                 <section class="screenshot">
-                    <h4>Noughts Taking a Turn</h4>
+                    <h4>Area of a Circle Calculations</h4>
                     <p>
-                        <img 
-                            src="./images/tic-tac-toe/check-after-each-move.jpg" width="296" height="357"
-                            alt="A screenshot of the game after Noughts took a turn">
+                        <img src="./images/mathcalculations/circle.jpg" width="429" height="391"
+                        alt="A screenshot of calculating the area of a circle">
                     </p>
                 </section>
 
                 <section class="screenshot">
-                    <h4>Ending with a Win</h4>
+                    <h4>Palindromes up to 1,000</h4>
                     <p>
-                        <img 
-                            src="./images/tic-tac-toe/won.jpg" width="296" height="357"
-                            alt="A screenshot of the game ending with crosses who won">
+                        <img src="./images/mathcalculations/palindromes.jpg" width="429" height="860"
+                        alt="A screenshot of displaying palindromes up to 202">
+                        <img src="./images/mathcalculations/palindromes-212-606.jpg" width="429" height="910"
+                        alt="A screenshot of displaying palindromes from 212 to 606">
+                        <img src="./images/mathcalculations/palindromes-616-797.jpg" width="429" height="426"
+                        alt="A screenshot of displaying palindromes from 616 to 797">
+                        <img src="./images/mathcalculations/palindromes-808-999.jpg" width="429" height="611"
+                        alt="A screenshot of displaying palindromes from 808 to 1,000">
                     </p>
                 </section>
 
                 <section class="screenshot">
-                    <h4>Ending in a Draw</h4>
+                    <h4>Exiting the Program</h4>
                     <p>
-                        <img 
-                            src="./images/tic-tac-toe/draw.jpg" width="296" height="357"
-                            alt="A screenshot of the game ending in a draw">
+                        <img src="./images/mathcalculations/exit.jpg" width="429" height="236"
+                        alt="A screenshot of exiting the program">
                     </p>
                 </section>
             </section>
@@ -233,7 +226,7 @@
             <a href="#back" title="Go to the top of the page">Top of page</a>
         </p>
     </main>
-    
+
     <footer>
         <p>&copy; 2024 Tanya Suzette Boshoff</p>
     </footer>
