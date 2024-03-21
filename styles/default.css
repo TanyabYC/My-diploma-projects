@@ -14,6 +14,44 @@ body {
     color: #28498a;
 }
 
+/* Style all hyperlinks */
+a {
+    color: coral;
+    font-style: italic;
+}
+
+/* Change style when user hovers over hyperlink */
+a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: rgb(17, 199, 255);
+}
+
+header {
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgb(17, 199, 255);
+}
+
+h1 {
+    font-family: 'Spectral', Georgia, serif;
+    text-align: center;
+    color: rgb(17, 199, 255);
+    margin-top: 0;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(17, 199, 255);
+}
+
+.project {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+/* Remove padding of first section */
+section:first-of-type {
+    padding-top: 0;
+}
+
 section, .to-top {
     padding-top: 25px;
 }
@@ -23,50 +61,30 @@ section, .to-top {
     letter-spacing: 2px;
 }
 
-footer {
-    padding-top: 50px;
-    text-align: center;
-}
-
-a {
-    color: coral;
-    font-style: italic;
-}
-
-a:hover {
-    opacity: 0.7;
-    text-decoration: none;
-    color: rgb(17, 199, 255);
-}
-
-h1 {
-    font-family: 'Spectral', Georgia, serif;
-    text-align: center;
-    color: rgb(17, 199, 255);
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
 h2 {
     color: rgb(17, 199, 255);
     font-family: 'Spectral', Georgia, serif;
 }
+    h3, 
+    h4 {
+        font-family: 'Spectral', Georgia, serif;
+    }
 
-h3, 
-h4 {
-    font-family: 'Spectral', Georgia, serif;
-}
+    h3 {
+        text-align: center;
+    }
 
-h3 {
+    h4 {
+        padding-top: 50px;
+        text-transform: uppercase;
+    }
+
+.to-top {
     text-align: center;
 }
 
-h4 {
+footer {
     padding-top: 50px;
-    text-transform: uppercase;
-}
-
-.to-top {
     text-align: center;
 }
 
@@ -76,10 +94,15 @@ h4 {
     /* decrease font size for tablets */
     body {
         font-size: 1.5em;
+        padding-top: 0;        
     }
+        /* Remove heading 1 styling */
         h1 {
-            padding-top: 0;
-            padding-bottom: 85px;
+            border-bottom: none;
+        }
+        /* Style project links */
+        .project {
+            text-align: center;
         }
 }
 
@@ -87,15 +110,15 @@ h4 {
 @media only screen and (min-width: 768px) {
     body {
         font-size: 1.25em;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 }
 
 /* For larger screens */
 @media only screen and (min-width: 1024px) {
     body {
-        padding: 50px 200px;
+        padding-right: 12.5%;
+        padding-left: 12.5%;
     }
-        .project {
-            text-align: center;
-        }
 }
