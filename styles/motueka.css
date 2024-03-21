@@ -1,10 +1,20 @@
-.project a {
+/* Style the top project link and instruction */
+.project a, .project-instruction {
     line-height: 2.75;
+}
+    .root {
+        font-weight: bold;
+    }
+.project-instruction {
+    font-style: italic;
 }
 
 /* For laptop and desktop screens */
 @media only screen and (min-width: 600px) {
     .project a {
         line-height: initial;
+    }
+    .project-instruction {
+        text-align: center;
     }
 }

@@ -44,12 +44,6 @@ h1 {
 
 .project {
     padding-top: 50px;
-    padding-bottom: 25px;
-}
-
-/* Remove padding of first section */
-section:first-of-type {
-    padding-top: 0;
 }
 
 section, .to-top {

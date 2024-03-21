@@ -1,7 +1,10 @@
 /* Style the thank you message seen on the screen */
 p:nth-child(2) {
-    padding-top: 25px;
+    padding-top: 50px;
 }
+    p:nth-child(3) {
+        padding-top: 25px;
+    }
 
 section p {
     padding-inline-start: 5%;
