@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 
     <!-- JavaScript -->
+    <script src="./js/default.js"></script>
     <script src="./js/menuScript.js"></script>
     <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
     
-    <title>My Diploma Projects</title>
+    <title>My Diploma Projects &#124; Overview</title>
 </head>
 <body>
     <!-- The header contains the navigational menu -->
@@ -43,8 +44,8 @@
 
                 <!-- Web Applications Menu -->
                 <li class="dropdown">
-                    Web Applications
-                    <ul class="dropdown-content">
+                    <span onclick="toggleWebApps()">Web Applications</span>
+                    <ul class="dropdown-content" id="web-apps-content">
                         <li>
                             <a href="./motueka.html">Bed &amp; Breakfast</a>
                         </li>
@@ -59,8 +60,8 @@
 
                 <!-- Games Menu -->
                 <li class="dropdown">
-                    Games
-                    <ul class="dropdown-content">
+                    <span onclick="toggleGames()">Games</span>
+                    <ul class="dropdown-content" id="games-content">
                         <li>
                             <a href="./breakout.html">Breakout</a>
                         </li>
@@ -70,10 +71,10 @@
                     </ul>
                 </li>
 
-                <!-- Console Applications Menu -->
+                <!-- Computer Applications Menu -->
                 <li class="dropdown">
-                    Console Applications
-                    <ul class="dropdown-content">
+                    <span onclick="toggleComputerApps()">Computer Applications</span>
+                    <ul class="dropdown-content" id="computer-apps-content">
                         <li>
                             <a href="./student-data.html">Data Management</a>
                         </li>
@@ -99,9 +100,9 @@
             <a href="https://www.openpolytechnic.ac.nz/" target="_blank" title="More on Open Polytechnic NZ">Open Polytechnic NZ</a>.
         </p>
 
-        <!-- The B&B Web App section -->
+        <!-- The Web App | The Motueka Bed & Breakfast section -->
         <section>
-            <h2>Bed &amp; Breakfast Web Application</h2>
+            <h2>Web Application &#124; The Motueka Bed &amp; Breakfast</h2>
             <p>
                 The project was completed during the Web Programming course and involved creating a bed &amp; breakfast web application 
                 to allow staff to manage rooms, bookings and customers and also allow customers to register and book a room. 
@@ -111,7 +112,7 @@
 
         <!--The Restaurant Web App section  -->
         <section>
-            <h2>Restaurant Web Application</h2>
+            <h2>Web Application &#124; The Haukai Restaurant</h2>
             <p>
                 The project was completed during the Web Development course and involved creating a web application that allows customers 
                 to find out about the restaurant, view the menu, request a reservation, view opening hours and contact details. Additionally, 
@@ -120,47 +121,49 @@
             </p>
         </section>
 
+        <!-- The Python Console App | Mathematical Calculations section -->
         <section>
-            <h2>Mathematical Calculations Console Application</h2>
+            <h2>Python Console Application &#124; Mathematical Calculations</h2>
             <p>
                 The project was completed during the Programming I course and involved creating a console 
-                application that manages mathematical calculations. 
+                application in the Python programming language to manage mathematical calculations. 
                 <a href="./mathcalculations.html" title="More on the console application">Read more...</a>
             </p>
         </section>
 
-        <!-- The Breakout Game section -->
+        <!-- The Java Game | Breakout section -->
         <section>
-            <h2>Breakout Game</h2>
+            <h2>Java Game &#124; Breakout</h2>
             <p>
-                The project was completed during the Programming I course and involved creating a Breakout game. 
+                The project was completed during the Programming I course and involved creating a Breakout game 
+                in the Java programming language. 
                 <a href="./breakout.html" title="More on the game">Read more...</a>
             </p>
         </section>
 
-        <!-- The Tic Tac Toe Game section -->
+        <!-- The Java Game | Tic-Tac-Toe section -->
         <section>
-            <h2>Tic&#45;Tac&#45;Toe Game</h2>
+            <h2>Java Game &#124; Tic&#45;Tac&#45;Toe</h2>
             <p>
                 The project was completed during the Programming I course and involved creating 
-                a Tic&#45;Tac&#45;Toe game. 
-                <a href="./tic-tac-toe.html">Read more...</a>
+                a Tic&#45;Tac&#45;Toe game in the Java programming language. 
+                <a href="./tic-tac-toe.html" title="More on the game">Read more...</a>
             </p>
         </section>
 
-        <!-- The Student Data Management Console App section -->
+        <!-- The Java Console App | Student Data Management section -->
         <section>
-            <h2>Data Management Console Application</h2>
+            <h2>Java Console Application &#124; Student Data Management</h2>
             <p>
                 The project was completed during the Programming I course and involved creating a console 
-                application that manages student data.
+                application in the Java programming language to manage student data. 
                 <a href="./student-data.html" title="More on the console application">Read more...</a>
             </p>
         </section>
 
-        <!-- The Airbnb Website section -->
+        <!-- The Website | Simone and Peter's Airbnb section -->
         <section>
-            <h2>Airbnb Website</h2>
+            <h2>Website &#124; Simone and Peter&#39;s Airbnb</h2>
             <p>
                 The project was completed during the Fundamentals of Information Technology course and 
                 involved creating a website to further promote the Airbnb business. 
@@ -168,12 +171,13 @@
             </p>
         </section>
 
-        <!-- The Gym Membership Desktop Database App section -->
+        <!-- The C# Windows Desktop Database App | City Gym Memberships section -->
         <section>
-            <h2>Gym Membership Desktop Database Application</h2>
+            <h2>C&#35; Windows Desktop Database Application &#124; City Gym Memberships</h2>
             <p>
                 The project was completed during the Fundamentals of Programming course and involved 
-                creating a gym membership desktop database application. 
+                creating a gym membership desktop database application in the C&#35; programming language to
+                allow staff to manage gym memberships. 
                 <a href="./citygym.html" title="More on the desktop database application">Read more...</a>
             </p>
         </section>

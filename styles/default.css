@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+/* Hide page content when user prints page */
+@media print {
+    html, body {
+        display: none;
+        visibility: hidden;
+    }
+}
+
 /* Prepare the body style */
 body {
     max-width: 100%;
