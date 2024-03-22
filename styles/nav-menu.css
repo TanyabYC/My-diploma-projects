@@ -15,6 +15,11 @@
     display: block;
 }
 
+/* Hide menu dropdown content */
+.dropdown-content {
+    display: none;
+}
+
     /* Style all lists and links in nav menu */
     nav li {
         list-style-type: none;
@@ -76,12 +81,8 @@
                 overflow: hidden; /* no scrolling */
             }
                 .dropdown-content {
-                    display: none;
                     font-size: smaller;
                 }
-                    .dropdown:hover .dropdown-content {
-                        display: block;
-                    }
                         .dropdown-content li {
                             margin-top: 10px;
                         }

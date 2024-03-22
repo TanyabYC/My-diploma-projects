@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 
     <!-- JavaScript -->
+    <script src="./js/default.js"></script>
     <script src="./js/menuScript.js"></script>
     <script src="https://kit.fontawesome.com/c1344ad064.js" crossorigin="anonymous"></script>
 
-    <title>Breakout Game</title>
+    <title>Java Game &#124; Project Outline</title>
 </head>
 <body>
     <!-- The header contains the navigational menu -->
@@ -43,8 +44,8 @@
 
                 <!-- Web Applications Menu -->
                 <li class="dropdown">
-                    Web Applications
-                    <ul class="dropdown-content">
+                    <span onclick="toggleWebApps()">Web Applications</span>
+                    <ul class="dropdown-content" id="web-apps-content">
                         <li>
                             <a href="./motueka.html">Bed &amp; Breakfast</a>
                         </li>
@@ -59,8 +60,8 @@
 
                 <!-- Games Menu -->
                 <li class="dropdown">
-                    Games
-                    <ul class="dropdown-content">
+                    <span onclick="toggleGames()">Games</span>
+                    <ul class="dropdown-content" id="games-content">
                         <li>
                             <a class="active" href="./breakout.html">Breakout</a>
                         </li>
@@ -70,10 +71,10 @@
                     </ul>
                 </li>
 
-                <!-- Console Applications Menu -->
+                <!-- Computer Applications Menu -->
                 <li class="dropdown">
-                    Console Applications
-                    <ul class="dropdown-content">
+                    <span onclick="toggleComputerApps()">Computer Applications</span>
+                    <ul class="dropdown-content" id="computer-apps-content">
                         <li>
                             <a href="./student-data.html">Data Management</a>
                         </li>
@@ -90,7 +91,7 @@
     </header>
 
     <main>
-        <h1>Breakout Game</h1> 
+        <h1>Java Game &#124; Breakout</h1> 
         <p class="project">
             <a href="https://github.com/TanyabYC/breakout-game/tree/main/Breakout/src" 
                 target="_blank" title="View the source code">Source code</a>
