@@ -1,10 +1,21 @@
+/* Style the top project links */
 .project a {
+    display: block;
     line-height: 2.75;
+}
+
+/* Clearfix after project paragraph containing hyperlinks */
+.project::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* For laptop and desktop screens */
 @media only screen and (min-width: 600px) {
     .project a {
+        float: left;
+        width: 50%;
         line-height: initial;
     }
 }
